@@ -54,7 +54,6 @@ import java.util.Set;
     }
     private HotelsDto mapToHotelDto(Hotels hotels) {
         // Логика маппинга объекта Hotel на объект HotelDto
-        // Пример:
         HotelsDto hotelsDto = new HotelsDto();
         hotelsDto.setName(hotels.getName());
         hotelsDto.setAddress(hotels.getAddress());

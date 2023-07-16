@@ -42,8 +42,8 @@ public class Hotels extends BaseEntity{
         return address;
     }
 
-    public void setAddress(String adress) {
-        this.address = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public Integer getRating() {
