@@ -2,10 +2,9 @@ package com.example.springdatabasicdemo.controllers;
 
 import com.example.springdatabasicdemo.dtos.HotelsDto;
 import com.example.springdatabasicdemo.dtos.StudentDto;
-import com.example.springdatabasicdemo.models.Hotels;
 import com.example.springdatabasicdemo.services.HotelsService;
 import com.example.springdatabasicdemo.services.StudentService;
-import com.example.springdatabasicdemo.services.ToursService;
+import com.example.springdatabasicdemo.services.impl.ToursServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,9 +19,9 @@ public class StudentController {
     @Autowired
     private HotelsService hotelsService;
 
-    private final ToursService tourService;
+    private final ToursServiceImpl tourService;
 
-    public StudentController(ToursService tourService) {
+    public StudentController(ToursServiceImpl tourService) {
         this.tourService = tourService;
     }
 

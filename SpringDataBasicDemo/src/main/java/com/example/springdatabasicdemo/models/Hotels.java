@@ -16,7 +16,7 @@ public class Hotels extends BaseEntity{
     @Column(nullable = false)
     private Integer rating;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "id.hotels")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "id.hotels")
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private Set<ToursHotels> toursHotels;
 

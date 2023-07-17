@@ -24,7 +24,7 @@ public class Tours extends BaseEntity {
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "tours")
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private Set<Sale> sale;
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "id.tours")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "id.tours")
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private Set<ToursHotels> toursHotels;
 
