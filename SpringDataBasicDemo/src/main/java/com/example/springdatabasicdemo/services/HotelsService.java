@@ -14,4 +14,5 @@ public interface HotelsService<ID>{
 
     List<HotelsDto> getAll();
 
-    Optional<HotelsDto> findHotels(ID id);}
+    Optional<HotelsDto> findHotels(ID id);
+}

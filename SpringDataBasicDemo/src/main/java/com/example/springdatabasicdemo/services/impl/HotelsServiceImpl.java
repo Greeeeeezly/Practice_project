@@ -44,7 +44,7 @@ public class HotelsServiceImpl implements HotelsService<Integer> {
 
     @Override
     public List<HotelsDto> getAll() {
-        return hotelsRepo.findAll().stream().map((s) -> modelMapper.map(s, HotelsDto.class)).collect(Collectors.toList());
+        return hotelsRepo.findAll().stream().map((h) -> modelMapper.map(h, HotelsDto.class)).collect(Collectors.toList());
     }
 
 }

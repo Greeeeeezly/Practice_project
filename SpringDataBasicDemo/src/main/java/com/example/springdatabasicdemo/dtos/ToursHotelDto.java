@@ -1,7 +1,5 @@
 package com.example.springdatabasicdemo.dtos;
 
-
-
 public class ToursHotelDto {
     private int id;
     private ToursDto tours;
