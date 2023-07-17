@@ -40,7 +40,7 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
         HotelsDto h1 = new HotelsDto(0,"Bober","Pushkina 3",3);
         HotelsDto h2 = new HotelsDto(0,"Bogfds","Pushfdasina 3",9);
         HotelsDto h3 = new HotelsDto(0,"Aboba","Pushkina 7",7);*/
-        HotelsDto h4 = new HotelsDto(2,"SomeHotel","Glushkina 2",3);
+        HotelsDto h4 = new HotelsDto(2,"jija","Pushkina 2",4);
 
        /* h1=hotelsService.register(h1);
         h2=hotelsService.register(h2);

@@ -1,4 +1,4 @@
-package com.example.springdatabasicdemo.controllers;
+package com.example.springdatabasicdemo.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ControllerAdvice
-public class StudentNotFoundAdvice {
+public class CountryNotFoundAdvice {
     @ResponseBody
-    @ExceptionHandler(StudentNotFoundException.class)
+    @ExceptionHandler(CountryNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    String studentNotFoundHandler(StudentNotFoundException ex) {
+    String countryNotFoundHandler(CountryNotFoundException ex) {
         return ex.getMessage();
     }
 }
